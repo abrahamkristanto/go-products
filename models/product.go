@@ -19,5 +19,5 @@ type Product struct {
 type CreateProductInput struct {
 	Name        string `json:"name"`
 	Description string `json:"description"`
-	Quantity    string `json:"quantity"`
+	Quantity    int `json:"quantity"`
 }

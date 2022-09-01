@@ -12,6 +12,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/products", handlers.GetProducts)
-
+	r.POST("/products", handlers.CreateProduct)
+	r.DELETE("/products/:id", handlers.DeleteProduct)
 	r.Run(":8080")
 }
